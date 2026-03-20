@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-    /*  DOCKER_HUB_USER = 'abhiram5673'      */  // 🔹 your DockerHub username
+    /*  DOCKER_HUB_USER = 'vijaya9494'      */  // 🔹 your DockerHub username
         IMAGE_NAME      = 'zomato1'
         IMAGE_TAG       = 'v1'
     }
@@ -16,7 +16,7 @@ pipeline {
         }
         stage ("Git Checkout") {
             steps {
-                git 'https://github.com/abhiram2106/DevOps-Project-Zomato-Kastro.git'
+                git 'https://github.com/vijaya-9-afk/zomato.git'
             }
         }
         stage ("Build Docker Image") {
